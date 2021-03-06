@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+header, main, footer {
+    padding: 4%;
+}
+
+#background-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1000px;
+    z-index: -1;
+    background: linear-gradient(-8deg, white 25%, rgb(95, 157, 211) 25%, rgb(69, 133, 189) 100%)
+}
+
+#app {
+    background-color: rgb(80, 145, 200);
+}
+
+#top-navbar {
+    grid-template-columns: 20% auto 30%;
+    margin-bottom: 10vh;
+}
+
+#navbar-link-block {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-text {
+    padding: 10px;
+}
+
+#navbar-icon-block {
+    justify-self: end;
+}
+
+.navbar-icon {
+    height: 30px;
+    margin: 5px;
+}
+
+.navbar-button {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.navbar-button:hover {
+    background-color: salmon;
+}
+
+#top-description {
+    color: white;
+    grid-template-columns: 50% 50%;
+}
+
+#top-description-left-half>p {
+    font-size: 18px;
+    line-height: 2.5;
+}
+
+#signup-button {
+    border: 1px solid;
+    border-radius: 4px;
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+}
+
+.vertical-block {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 18%;
+    min-height: 360px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#get-started-content>ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#get-started-title {
+    margin: 8%;
+}
+
+#seller-types-background {
+    position: absolute;
+    /*Overrides the padding in the parent setting*/
+    left: -5%;
+    right: -5%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(-8deg, white 25%, rgb(30, 119, 56) 25%, rgb(41, 141, 71) 100%)
+}
+
+.seller-box {
+    width: 80%;
+    height: 80px;
+    padding: 5%;
+}
+
+#signup-card {
+    background: linear-gradient(-20deg, rgb(92, 206, 187) 0%, rgb(62, 201, 104) 40%, rgb(71, 199, 199) 100%)
+}
+
+footer {
+    position: relative;
+}
+
+#footer-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(-8deg, rgba(0, 0, 0, 0.1) 35%, white 35%);
+    z-index: -1;
+}
+
+#foot {
+    border-top: 2px gainsboro solid;
+    padding-top: 5%;
+}
+
+#benefits-content {
+    transition: 0.5s;
+}
