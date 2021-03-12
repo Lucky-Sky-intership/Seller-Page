@@ -46,6 +46,8 @@
     color: cornflowerblue;
 }
 
+/*Green background and White text Button*/
+
 .gw-button {
     background-color: lightseagreen;
     color: white;
@@ -61,4 +63,8 @@
 
 .ow-button:hover, .bw-button:hover, .gw-button:hover {
     background-color: white;
+}
+
+.wb-button, .wbk-button, .ow-button, .bw-button, .gw-button {
+    border: none;
 }

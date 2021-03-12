@@ -28,3 +28,11 @@ function addClasses(clses, location) {
   });
   focused_elem = elem;
 }
+
+function directTo(url) {
+  window.open(url);
+}
+
+function gotoBlock(location){
+  document.getElementById(location).scrollIntoView();
+}

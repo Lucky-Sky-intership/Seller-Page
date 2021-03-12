@@ -30,8 +30,8 @@
                     <img src="icons/ijb-logo-white.png" class="h40">
                 </div>
                 <div class="txt-24 white row-flex align-center">
-                    <div class="p10 ptr lnk">Home</div>
-                    <div class="p10 ptr lnk">Seller</div>
+                    <div class="p10 ptr lnk" onclick="directTo('https://google.com')">Home</div>
+                    <div class="p10 ptr lnk" onclick="directTo('https://google.com')">Seller</div>
                 </div>
                 <div class="justify-self-end">
                     <div class="row-flex justify-spacebetween align-center ft40">
@@ -57,7 +57,7 @@
                         auctor. Quam nulla porttitor massa id neque aliquam vestibulum
                         morbi.]]
                     </p>
-                    <button id="signup-button" class="wb-button h60 w140 txt-20">
+                    <button id="signup-button" class="wb-button h60 w140 txt-20" onclick="directTo('https://google.com')">
                         <b>SIGN UP</b>
                     </button>
                 </div>
@@ -74,7 +74,7 @@
                         Get to know the procedure for how to become a Seller at
                         iJiaBuy.
                     </p>
-                    <button class="rnd4 button-shadow w180 h60 txt-22 bw-button h-center"">Learn More</button>
+                    <button class="rnd4 button-shadow w180 h60 txt-22 bw-button h-center" onclick="gotoBlock('seller-types')">Learn More</button>
                 </div>
                 <!-- Second block -->
                 <div class="vertical-block txt-22 block-shadow container align-center" style="transform: translateY(-30px);">
@@ -102,7 +102,7 @@
                 </div>
             </section>
             <!-- Get Started Page -->
-            <section id="get-started" class="whole-page container align-center" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <section id="get-started" class="whole-page container align-center" style="grid-template-columns: repeat(2, 1fr);">
                 <div id="get-started-content">
                     <div id="get-started-title" class="row-flex align-center">
                         <div class="txt-42">
@@ -241,16 +241,20 @@
                 <div class="container txt-24 align-center" style="border-bottom: 2px rgb(190, 190, 190) solid; grid-template-columns: repeat(4, 1fr);">
                     <div id="first-button" class="full-width wbk-button rnd6" onclick="
                         switchContent(SellerPortalText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'first-button');">
-                        <div class="p10">Seller Portal</div></div>
+                        <div class="p10">Seller Portal</div>
+                    </div>
                     <div id="second-button" class="full-width wbk-button rnd6" onclick="
                         switchContent(ExpandYourMarketText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'second-button');">
-                        <div class="p10">Expand Your Market</div></div>
+                        <div class="p10">Expand Your Market</div>
+                    </div>
                     <div id="third-button" class="full-width wbk-button rnd6" onclick="
                     switchContent(ReliableDistributionText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'third-button');">
-                    <div class="p10">Reliable Distribution</div></div>
+                        <div class="p10">Reliable Distribution</div>
+                    </div>
                     <div id="fourth-button" class="full-width wbk-button rnd6" onclick="
                     switchContent(MultipleSellerTypesText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'fourth-button');">
-                    <div class="p10">Multiple Seller Types</div></div>
+                        <div class="p10">Multiple Seller Types</div>
+                    </div>
                 </div>
                 <div id="benefits-content" class="txt-22 gray mtb10">
                     Raw denim you probably haven't heard of them jean shorts
@@ -273,7 +277,7 @@
                             </p>
                         </div>
                         <div class="half-width">
-                            <button class="wbk-button rnd4 h-center txt-20 button-shadow plr15p ptb5p">
+                            <button class="wbk-button rnd4 h-center txt-20 button-shadow plr15p ptb5p"  onclick="directTo('https://google.com')">
                                 <b>SIGN UP</b>
                             </button>
                         </div>
@@ -307,9 +311,9 @@
             <div id="foot" class="row-flex gray justify-spacebetween txt-28">
                 <div>@2021 iJiaBuy</div>
                 <div class="row-flex justify-spacebetween" style="min-width: 40%;">
-                    <span>About us</span>
-                    <span>Blog</span>
-                    <span>MIT License</span>
+                    <span class="ptr">About us</span>
+                    <span class="ptr">Blog</span>
+                    <span class="ptr">MIT License</span>
                 </div>
             </div>
         </footer>
