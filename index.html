@@ -74,7 +74,7 @@
                         Get to know the procedure for how to become a Seller at
                         iJiaBuy.
                     </p>
-                    <button class="rnd4 button-shadow w180 h60 txt-22 bw-button h-center" onclick="gotoBlock('seller-types')">Learn More</button>
+                    <button class="rnd4 button-shadow w180 h60 txt-22 bw-button h-center" onclick="gotoBlock('get-started')">Learn More</button>
                 </div>
                 <!-- Second block -->
                 <div class="vertical-block txt-22 block-shadow container align-center" style="transform: translateY(-30px);">
@@ -82,7 +82,7 @@
                     <p class="txt-22 lh2 gray">
                         iJiaBuy provides multiple seller types to suit your needs.
                     </p>
-                    <button class="rnd4 button-shadow w180 h60 txt-22 ow-button h-center">Learn More</button>
+                    <button class="rnd4 button-shadow w180 h60 txt-22 ow-button h-center" onclick="gotoBlock('seller-types')">Learn More</button>
                 </div>
                 <!-- Third block -->
                 <div class="vertical-block txt-22 block-shadow container align-center" style="transform: translateY(30px);">
@@ -189,133 +189,132 @@
                 </div>
             </section>
             <!-- Categories Page -->
-            <section id="categories" class="whole-page container auto-row">
-                <div class="h-center txt-48" style="align-self: center;">
+            <section id="categories" class="whole-page container auto-row  justify-center cgap-10" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="h-center txt-48" style="align-self: center; grid-column: 1/5;">
                     <b>Categories</b>
                 </div>
                 <!-- Always divide the whole space into 4 columns -->
-                <div class="container full-width justify-center cgap-10" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
-                    <div class="full-width" style="text-align: center;">
-                        <img class="drop-shadow w200 m20 circle" src="images/img-1.jpg">
-                        <div class="txt-22">
-                            <b>Personal</b>
-                        </div>
-                    </div>
-                    <div class="full-width" style="text-align: center;">
-                        <img class="drop-shadow w200 m20 circle" src="images/img-2.jpg">
-                        <div class="txt-22">
-                            <b>Household</b>
-                        </div>
-                    </div>
-                    <div class="full-width" style="text-align: center;">
-                        <img class="drop-shadow w200 m20 circle" src="images/img-3.jpg">
-                        <div class="txt-22">
-                            <b>Electronic</b>
-                        </div>
-                    </div>
-                    <div class="full-width" style="text-align: center;">
-                        <img class="drop-shadow w200 m20 circle" src="images/img-4.jpg">
-                        <div class="txt-22">
-                            <b>Children</b>
-                        </div>
-                    </div>
-                    <div class="full-width" style="text-align: center;">
-                        <img class="drop-shadow w200 m20 circle" src="images/img-5.jpg">
-                        <div class="txt-22">
-                            <b>Yumms</b>
-                        </div>
+                <div class="full-width" style="text-align: center;">
+                    <img class="drop-shadow w200 m20 circle enlarge" src="images/img-1.jpg">
+                    <div class="txt-22">
+                        <b>Personal</b>
                     </div>
                 </div>
-            </section>
-            <!-- Benefits Page -->
-            <section id="benefits" class="whole-page">
-                <div id="benefits-title" class="row-flex align-center">
-                    <span class="fa-stack m20 txt-42">
-                        <i class="fa fa-circle fa-stack-2x" style="color:lightseagreen;"></i>
-                        <i class="fa fa-hand-o-right fa-stack-1x" style="color:white;"></i>
-                    </span>
-                    <p class="txt-48">
-                        <b>Benefits</b>
-                    </p>
+                <div class="full-width" style="text-align: center;">
+                    <img class="drop-shadow w200 m20 circle enlarge" src="images/img-2.jpg">
+                    <div class="txt-22">
+                        <b>Household</b>
+                    </div>
                 </div>
-                <div class="container txt-24 align-center" style="border-bottom: 2px rgb(190, 190, 190) solid; grid-template-columns: repeat(4, 1fr);">
-                    <div id="first-button" class="full-width wbk-button rnd6" onclick="
+                <div class="full-width" style="text-align: center;">
+                    <img class="drop-shadow w200 m20 circle enlarge" src="images/img-3.jpg">
+                    <div class="txt-22">
+                        <b>Electronic</b>
+                    </div>
+                </div>
+                <div class="full-width" style="text-align: center;">
+                    <img class="drop-shadow w200 m20 circle enlarge" src="images/img-4.jpg">
+                    <div class="txt-22">
+                        <b>Children</b>
+                    </div>
+                </div>
+                <div class="full-width" style="text-align: center;">
+                    <img class="drop-shadow w200 m20 circle enlarge" src="images/img-5.jpg">
+                    <div class="txt-22">
+                        <b>Yumms</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Benefits Page -->
+        <section id="benefits" class="whole-page">
+            <div id="benefits-title" class="row-flex align-center">
+                <span class="fa-stack m20 txt-42">
+                    <i class="fa fa-circle fa-stack-2x" style="color:lightseagreen;"></i>
+                    <i class="fa fa-hand-o-right fa-stack-1x" style="color:white;"></i>
+                </span>
+                <p class="txt-48">
+                    <b>Benefits</b>
+                </p>
+            </div>
+            <div class="container txt-24 align-center" style="border-bottom: 2px rgb(190, 190, 190) solid; grid-template-columns: repeat(4, 1fr);">
+                <div id="first-button" class="full-width wbk-button rnd6" onclick="
                         switchContent(SellerPortalText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'first-button');">
-                        <div class="p10">Seller Portal</div>
-                    </div>
-                    <div id="second-button" class="full-width wbk-button rnd6" onclick="
-                        switchContent(ExpandYourMarketText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'second-button');">
-                        <div class="p10">Expand Your Market</div>
-                    </div>
-                    <div id="third-button" class="full-width wbk-button rnd6" onclick="
-                    switchContent(ReliableDistributionText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'third-button');">
-                        <div class="p10">Reliable Distribution</div>
-                    </div>
-                    <div id="fourth-button" class="full-width wbk-button rnd6" onclick="
-                    switchContent(MultipleSellerTypesText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'fourth-button');">
-                        <div class="p10">Multiple Seller Types</div>
-                    </div>
+                    <div class="p10">Seller Portal</div>
                 </div>
-                <div id="benefits-content" class="txt-22 gray mtb10">
-                    Raw denim you probably haven't heard of them jean shorts
+                <div id="second-button" class="full-width wbk-button rnd6" onclick="
+                        switchContent(ExpandYourMarketText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'second-button');">
+                    <div class="p10">Expand Your Market</div>
+                </div>
+                <div id="third-button" class="full-width wbk-button rnd6" onclick="
+                    switchContent(ReliableDistributionText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'third-button');">
+                    <div class="p10">Reliable Distribution</div>
+                </div>
+                <div id="fourth-button" class="full-width wbk-button rnd6" onclick="
+                    switchContent(MultipleSellerTypesText, 'benefits-content'); addClasses(['lightgreen-back', 'white'],'fourth-button');">
+                    <div class="p10">Multiple Seller Types</div>
+                </div>
+            </div>
+            <div id="benefits-content" class="txt-22 gray mtb10">
+                Raw denim you probably haven't heard of them jean shorts
                     Austin. Nesciunt tofu stumptown aliqua, retro synth master
                     cleanse. Mustache cliche tempor, williamsburg carles vegan
                     helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
                     synth.
-                </div>
-                <br>
-                <div id="signup-card" class="full-width rnd4 block-shadow white">
-                    <div class="row-flex align-center p5p">
-                        <div class="half-width">
-                            <div class="txt-32">[[Lorem ipsum dolor sit amet, consectetur adipiscing elit]]</div>
-                            <br>
-                            <p class="txt-24 lh15" style="margin: 0;">
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
+            </div>
+            <br>
+            <div id="signup-card" class="full-width rnd4 block-shadow white">
+                <div class="row-flex align-center p5p">
+                    <div class="half-width">
+                        <div class="txt-32">[[Lorem ipsum dolor sit amet, consectetur adipiscing elit]]</div>
+                        <br>
+                        <p class="txt-24 lh15" style="margin: 0;">
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Nisl suscipit adipiscing bibendum est ultricies
                                 integer quis auctor. Quam nulla porttitor massa id neque
                                 aliquam vestibulum morbi.
-                            </p>
-                        </div>
-                        <div class="half-width">
-                            <button class="wbk-button rnd4 h-center txt-20 button-shadow plr15p ptb5p"  onclick="directTo('https://google.com')">
-                                <b>SIGN UP</b>
-                            </button>
-                        </div>
+                        </p>
+                    </div>
+                    <div class="half-width">
+                        <button class="wbk-button rnd4 h-center txt-20 button-shadow plr15p ptb5p" onclick="directTo('https://google.com')">
+                            <b>SIGN UP</b>
+                        </button>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- a 4% padding all around-->
-        <footer>
-            <div id="footer-background"></div>
-            <!-- Stay Connected -->
-            <div class="txt-30 deepblue row-flex align-center justify-spacebetween">
-                <div>Let's Stay Connected</div>
-                <!-- Three icons -->
-                <div>
-                    <span class="fa-stack m10 txt-42">
-                        <i class="fa fa-square fa-stack-2x skyblue"></i>
-                        <i class="fa fa-twitter fa-stack-1x" style="color:white;"></i>
-                    </span>
-                    <span class="fa-stack m10 txt-42">
-                        <i class="fa fa-square fa-stack-2x deepblue"></i>
-                        <i class="fa fa-facebook-square fa-stack-1x" style="color:white;"></i>
-                    </span>
-                    <span class="fa-stack m10 txt-42">
-                        <i class="fa fa-square fa-stack-2x dark"></i>
-                        <i class="fa fa-weixin fa-stack-1x" style="color:white;"></i>
-                    </span>
-                </div>
             </div>
-            <br>
-            <div id="foot" class="row-flex gray justify-spacebetween txt-28">
-                <div>@2021 iJiaBuy</div>
-                <div class="row-flex justify-spacebetween" style="min-width: 40%;">
-                    <span class="ptr">About us</span>
-                    <span class="ptr">Blog</span>
-                    <span class="ptr">MIT License</span>
-                </div>
+        </section>
+    </main>
+    <!-- a 4% padding all around-->
+    <footer>
+        <div id="footer-background"></div>
+        <!-- Stay Connected -->
+        <div class="txt-30 deepblue row-flex align-center justify-spacebetween">
+            <div>Let's Stay Connected</div>
+            <!-- Three icons -->
+            <div>
+                <span class="fa-stack m10 txt-42">
+                    <i class="fa fa-square fa-stack-2x skyblue"></i>
+                    <i class="fa fa-twitter fa-stack-1x" style="color:white;"></i>
+                </span>
+                <span class="fa-stack m10 txt-42">
+                    <i class="fa fa-square fa-stack-2x deepblue"></i>
+                    <i class="fa fa-facebook-square fa-stack-1x" style="color:white;"></i>
+                </span>
+                <span class="fa-stack m10 txt-42">
+                    <i class="fa fa-square fa-stack-2x dark"></i>
+                    <i class="fa fa-weixin fa-stack-1x" style="color:white;"></i>
+                </span>
             </div>
-        </footer>
-    </body>
+        </div>
+        <br>
+        <div id="foot" class="row-flex gray justify-spacebetween txt-28">
+            <div>@2021 iJiaBuy</div>
+            <div class="row-flex justify-spacebetween" style="min-width: 40%;">
+                <span class="ptr">About us</span>
+                <span class="ptr">Blog</span>
+                <span class="ptr">MIT License</span>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
